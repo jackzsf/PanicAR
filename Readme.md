@@ -44,3 +44,18 @@ https://github.com/doPanic/PanicAR/wiki/
 For common build errors and other issues check:
 https://github.com/doPanic/PanicAR/wiki/Troubleshooting
 
+## Frequently asked questions
+
+### Where do i put the API key?
+You need to set the API key via the setApiKey method of [PARController sharedARController].
+You e.g. can do this in the loadView method of your controller:
+
+     - (void)loadView
+      {
+       // IMPORTANT: set Api Key before calling super:loadView!
+       [[PARController sharedARController] setApiKey:@""];
+       [[PARController sharedARController] setDelegate:self];
+       [super loadView];
+       [self.arRadarView setRadarRange:1500];
+    }
+
