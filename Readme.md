@@ -58,4 +58,8 @@ You e.g. can do this in the loadView method of your controller:
        [super loadView];
        [self.arRadarView setRadarRange:1500];
     }
+    
+
+
+[![Analytics](https://ga-beacon.appspot.com/UA-47538502-1/panicar/home)](https://github.com/dopanic/panicar)
 
